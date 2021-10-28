@@ -10,6 +10,7 @@ html {
 .alo {
     display: flex;
     justify-items: center;
+    z-index: 1;
 }
 .menu {
     height: 100px;
@@ -20,7 +21,6 @@ html {
 .header_one {
     margin : 0 7px 0 7px;
     color: #fff;
-
     font-size: 20px;
     text-decoration: unset;
     font-weight: 600;
@@ -34,6 +34,7 @@ html {
     color:#fff;
     cursor: pointer;
     text-decoration: none;
+    z-index: 2;
 }
 .header_item {
     margin-top:18px;
@@ -41,7 +42,6 @@ html {
     position: absolute;
     color:#fff;
     width: 179%;
-    
 }
 .timkiem {
     display:flex ;
