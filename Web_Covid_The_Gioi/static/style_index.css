@@ -64,3 +64,35 @@ html {
 .icon:hover {
     color:red;
 }
+
+
+/* chart */
+#info {
+    display: flex;
+    height: 700px;
+    justify-content: center;
+}
+
+#chart_covid {
+    height: 100%;
+    width: 900px;
+}
+
+#table_covid {
+    height: 100%;
+    width: 500px;
+}
+
+#table_covid table {
+    font-size: 20px;
+    width: 400px;
+    background-color: rgb(126, 240, 240);
+    border: 1px solid black;
+    padding: 5px;
+    margin: 50% 0px;
+}
+
+#table_covid table tr {
+    height: 35px;
+    line-height: 35px;
+}
