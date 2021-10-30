@@ -3,64 +3,75 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 html {
     height: 100%;
     font-family: Arial, Helvetica, sans-serif;
 }
+
 .alo {
     display: flex;
     justify-items: center;
     z-index: 1;
 }
+
 .menu {
     height: 100px;
     display: flex;
     align-items: center;
     background-color: #000;
 }
+
 .header_one {
-    margin : 0 7px 0 7px;
+    margin: 0 7px 0 7px;
     color: #fff;
     font-size: 20px;
     text-decoration: unset;
     font-weight: 600;
     cursor: pointer;
 }
+
 .header_one:hover {
     color: #999;
 }
+
 .header {
     padding: 0 50px 0 70px;
-    color:#fff;
+    color: #fff;
     cursor: pointer;
     text-decoration: none;
     z-index: 2;
 }
+
 .header_item {
-    margin-top:18px;
+    margin-top: 18px;
     height: 60px;
     position: absolute;
-    color:#fff;
+    color: #fff;
     width: 179%;
 }
+
 .timkiem {
-    display:flex ;
-    justify-content:center;
+    display: flex;
+    justify-content: center;
 }
+
 .hop {
     height: 35px;
     width: 200px;
-    border-radius: 18px ;
+    border-radius: 18px;
     border: none;
     outline: none;
     font-size: 14px;
     padding: 0 0 1.5px 12px;
 }
+
 .icon {
-    margin:5px 0 0 10px;
+    margin: 5px 0 0 10px;
     font-size: 25px;
     cursor: pointer;
 }
+
 .icon:hover {
-    color:red;
+    color: red;
 }
