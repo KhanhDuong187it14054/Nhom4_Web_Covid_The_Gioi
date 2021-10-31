@@ -128,11 +128,12 @@ body {
     border: 1px solid black;
     display: flex;
     justify-content: space-around;
+    background-color: aqua;
 }
 
 #footer .footer_left {
     /* flex-grow: 1; */
-    width: 300px;
+    width: 33.3%;
     height: 100%;
     background-color: red;
 }
@@ -142,18 +143,17 @@ body {
     list-style:  none;
 }
 
+
 #footer .footer_center {
     /* flex-grow: 1; */
-    width: 300px;
-    width: 33%;
+    width: 33.3%;
     height: 100%;
     background-color: green;
 }
 
 #footer .footer_right {
     /* flex-grow: 1; */
-    width: 300px;
-    width: 33%;
+    width: 33.3%;
     height: 100%;
     background-color: yellow;
 }
