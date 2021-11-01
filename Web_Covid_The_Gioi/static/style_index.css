@@ -37,7 +37,7 @@ body {
 .menu_item li:first-child {
     margin-left: 30px;
 }
-/*End menu_item*/
+
 /*Begin header*/
 .header {
     height: 500px;
@@ -89,8 +89,12 @@ body {
 .header_list .header_list-icon:hover {
     color:red;
 }
-/*End header*/
 
+/* Content  */
+#content {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
 
 /* chart */
 #info {
@@ -110,10 +114,12 @@ body {
 }
 
 #table_covid table {
-    font-size: 20px;
-    width: 400px;
-    background-color: rgb(126, 240, 240);
+    border-collapse: collapse;
+    font-size: 16px;
+    width: 320px;
+    background-color: rgba(207, 250, 250, 0.885);
     border: 1px solid black;
+    border-radius: 5px;
     padding: 5px;
     margin: 50% 0px;
 }
@@ -123,6 +129,47 @@ body {
     line-height: 35px;
 }
 
+#table_covid table td {
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+
+/* Info Table */
+
+#content .info_table {
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 55%;
+    margin: 0px auto;
+    padding: 10px ;
+}
+
+#content .info_table table, th, td {
+    text-align: center;
+}
+
+#content .info_table table {
+    border-collapse: collapse;
+    border-bottom: 1px solid black;
+    width: 100%;
+}
+
+#content .info_table th {
+    background-color: rgba(243, 240, 240, 0.652)
+}
+
+#content .info_table th,
+#content .info_table td {
+    height: 45px;
+    border-bottom: 1px solid black;
+}
+
+#content .info_table span {
+    display: inline-block;
+    margin-top: 12px;
+    margin-left: 6px;
+}
 
 /* footer  */
 #footer {
