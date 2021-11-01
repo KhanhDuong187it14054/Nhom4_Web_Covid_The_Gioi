@@ -5,9 +5,9 @@ function drawChart() {
 
 var data = google.visualization.arrayToDataTable([
     ['Status', 'Quantity'],
-    ['Confirmed', 905477],
-    ['Deaths', 21910],
-    ['Recovered', 813963]
+    ['Ca nhiễm', 905477],
+    ['Tử Vong', 21910],
+    ['Phục hồi', 813963]
 ]);
 
 var options = {
@@ -18,7 +18,7 @@ var options = {
     pieStartAngle: 270,
     chartArea:{
     left: 200,
-    width: 1500
+    width: 700
 }
 };
 
