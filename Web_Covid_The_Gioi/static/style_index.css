@@ -39,28 +39,39 @@ body {
 }
 
 /*Begin header*/
-.header {
+.header_all {
     height: 500px;
+}
+.header_full {
+    height: 57.5%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 57px;
+    left: 0;
+    right: 0;
+    bottom: 0;
 }
 .header_img {
     position: relative;
 }
-.header_slogan{
+.header_slogan {
     position: absolute;
-    top: 275px;
-    right: 249px;
-    color: #fff;
+    top: 340px;
+    right: 677px;
+    color: rgb(255, 255, 255);
     font-weight: 600;
+    font-size: 27px;
 }
 .header_slogan-text {
     font-size: 50px;
-    font-weight: 800;
+    font-weight: 1000;
     text-align: center;
 }
 .header_list {
-    position:absolute;
-    top:415px;
-    right: 180px;
+    position: absolute;
+    top: 469px;
+    right: 697px;
     display: flex;
 }
 .header_list .header_list-item {
@@ -71,16 +82,16 @@ body {
     outline: none;
 }
 .header_list input {
-    height: 40px;
-    width: 352px;
-    padding-left: 10px;
-    font-size: 14px;
+    height: 45px;
+    width: 400px;
+    padding:0 10px 0 10px;
+    font-size: 17px;
     border-style: none;
     outline: none;
     border-radius: 15px;
 }
 .header_list .header_list-icon {
-    font-size: 20px;
+    font-size: 25px;
     color: #fff;
     height: 40px;
     margin: 9px;
