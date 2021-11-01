@@ -9,6 +9,8 @@
 
     <link rel="stylesheet" href="../static/style_index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script src="../static/chart.js"></script>
@@ -20,8 +22,8 @@
                 <img src="../static/images/Capture.svg" alt="">
                 <li><a href="">
                     Trang Chủ</a></li>
-                <li><a href="">Tin Tức</a></li>
-                <li><a href="">Trang 2</a></li>
+                <li><a href="tin_tuc.html">Tin Tức</a></li>
+                <li><a href="tiem_chung.html">Tiêm Chủng</a></li>
             </ul>
     </div>       
 
@@ -43,49 +45,149 @@
             </div>    
             </div>
     </div>
-    <!-- Chart -->
-    <div id="info">
-        <div id="chart_covid"></div>
-        <div id="table_covid">
+
+
+    <div id="content">
+         <!-- Chart -->
+        <div id="info">
+            <div id="chart_covid"></div>
+            <div id="table_covid">
+                <table>
+                    <tr>
+                        <td><strong>Country</strong></td>
+                        <td>VietNam</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Confirmed</strong></td>
+                        <td>905477</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Deaths</strong></td>
+                        <td>21910</td>
+                    </tr>
+                        <tr>
+                        <td><strong>Recovered</strong></td>
+                        <td>813963</td>
+                    </tr>
+                </table>
+            </div> 
+        </div>
+
+         <!-- Info Table -->
+        <div class="info_table">
             <table>
                 <tr>
-                    <td>Country</td>
-                    <td>VietNam</td>
+                  <th>
+                      <i class="fa fa-globe" aria-hidden="true"></i>
+                      Quốc Gia
+                  </th>
+                  <th>Ca Nhiễm</th>
+                  <th>Tử Vong</th>
+                  <th>Phục Hồi</th>
                 </tr>
                 <tr>
-                    <td>Confirmed</td>
-                    <td>905477</td>
+                    <td>Toàn thế giới</td>
+                    <td>10000</td>
+                    <td>10000</td>
+                    <td>10000</td>
+                  </tr>
+                <tr>
+                  <td>Việt Nam</td>
+                  <td>10000</td>
+                  <td>10000</td>
+                  <td>10000</td>
                 </tr>
                 <tr>
-                    <td>Deaths</td>
-                    <td>21910</td>
+                    <td>Trung Quốc</td>
+                    <td>10000</td>
+                    <td>10000</td>
+                    <td>10000</td>
                 </tr>
-                    <tr>
-                    <td>Recovered</td>
-                    <td>813963</td>
+                <tr>
+                    <td>Mỹ</td>
+                    <td>10000</td>
+                    <td>10000</td>
+                    <td>10000</td>
                 </tr>
-            </table>
-        </div> 
+                <tr>
+                    <td>Canada</td>
+                    <td>10000</td>
+                    <td>10000</td>
+                    <td>10000</td>
+                </tr>
+                <tr>
+                    <td>France</td>
+                    <td>10000</td>
+                    <td>10000</td>
+                    <td>10000</td>
+                </tr>
+                <tr>
+                    <td>Spain</td>
+                    <td>10000</td>
+                    <td>10000</td>
+                    <td>10000</td>
+                </tr>
+                <tr>
+                    <td>Australia</td>
+                    <td>10000</td>
+                    <td>10000</td>
+                    <td>10000</td>
+                </tr>
+                <tr>
+                    <td>Russia</td>
+                    <td>10000</td>
+                    <td>10000</td>
+                    <td>10000</td>
+                </tr>
+                <tr>
+                    <td>Singapore</td>
+                    <td>10000</td>
+                    <td>10000</td>
+                    <td>10000</td>
+                </tr>
+              </table>
+              <span>Thông tin về dữ liệu này * Nguồn:
+                  <a href="https://www.worldometers.info/">Worldometers</a> </span>
+        </div>
     </div>
+   
+
 
     <!-- End menu  -->
     <div id="footer">
         <div class="footer_left">
             <img src="" alt="">
-            <ul class="address">
-                <li>Ho Chi Minh</li>
-                <li>0905468617</li>
-                <li>covid@gmail.com</li>
+            <ul class="address"> 
+                <li >
+                    <i class="fa fa-map-marker" aria-hidden="true"></i>
+                    <span>District 1, Ho Chi Minh</span> 
+                </li>
+                <li>
+                    <i class="fa fa-phone" aria-hidden="true"></i>
+                    <span>03286999999</span>    
+                </li>              
+                <li>
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                    <span>CovidNews@gmail.com</span>
+                </li>
             </ul>
         </div>
         <div class="footer_center">
-            a
+           <ul>
+                <li><i class="fa fa-facebook-official" aria-hidden="true"></i></li>
+                <li><i class="fa fa-instagram" aria-hidden="true"></i></li>
+                <li><i class="fa fa-twitter" aria-hidden="true"></i></li>
+                <li><i class="fa fa-youtube-play" aria-hidden="true"></i></li>
+           </ul>
+           <span>
+                Copyright @ 2021 CovidNews
+            </span>
         </div>
         <div class="footer_right">
-            b
+            <img src="../static/images/hinhfooter.png" alt="">
         </div>
+
     </div>
 </body>
 
 </html>
-
