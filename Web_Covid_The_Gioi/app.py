@@ -1,19 +1,22 @@
-from flask import Flask
-from flask import render_template
+from flask import Flask, render_template
+from flask import session
 
-ungdung = Flask(__name__)
+ungdung = Flask(__name__, static_folder="./static")
 
 @ungdung.route('/')
+@ungdung.route('/index.html')
 def index():
-   return render_template('index.html')
+  return render_template("index.html")
 
 @ungdung.route('/tin_tuc')
-def tin_tuc(name=None):
-    return render_template('tin_tuc.html')
+@ungdung.route('/tin_tuc.html')
+def tin_tuc():
+    return render_template("tin_tuc.html")
 
-@ungdung.route('/trang2')
-def trang2(name=None):
-    return render_template('trang2.html')
+@ungdung.route('/tiem_chung')
+@ungdung.route('/tiem_chung.html')
+def tiem_chung():
+  return render_template("tiem_chung.html")
 
-if __name__ == '__main__':
-    ungdung.run(port=5555)
+if __name__ == "__main__":
+  ungdung.run(port = 5050)
