@@ -4,6 +4,49 @@
     box-sizing: border-box;
 }
 
-h1 {
-    color: green;
+#banner {
+    margin: 100px auto;
+    width: 85%;
+    height: 400px;
+    background-image: linear-gradient(to right, #d85b3b ,#ffaf17, #f2b036);
+    border-radius: 10px;
+    position: relative;
+}
+
+#banner img {
+    height: 100%;
+    width: 50%;
+    margin-left: 150px;
+    
+}
+
+#banner button {
+    position: absolute;
+    top: 20%;
+    right: 12%;
+    height: 140px;
+    width: 330px;
+    background-color: red;
+    border-radius: 90px;
+    border: 4px solid white;
+    line-height: 50px;
+    font-size: 28px;
+    font-weight: 900;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    color: white;
+}
+
+#banner button:hover {
+    cursor: pointer;
+    font-size: 29px;
+    border: 5px solid white;
+}
+
+#banner .fa-hand-o-up {
+    position: absolute;
+    color: white;
+    font-size: 150px;
+    top: 58%;
+    right: 18%;
 }
