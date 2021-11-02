@@ -186,8 +186,8 @@ body {
 #footer {
     width: 100%;
     height: 200px;
-    border: 1px solid black;
-    background-color: #80CDEEFE;
+    border: none;
+    background-color: #fc6806fe;
     display: flex;
     justify-content: space-around;
     
