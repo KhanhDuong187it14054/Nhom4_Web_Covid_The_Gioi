@@ -18,6 +18,9 @@ body {
     margin-bottom: 10px;
     padding-top: 10px;
 }
+#menu .menu_item-img {
+    height: 100%;
+}
 
 #menu .menu_item {
     display: flex;

@@ -48,11 +48,16 @@
 }
 
 /* Main */
+#main {
+    
+}
 #main .content {
-    width: 100%;
+    width: 80%;
     height: 250px;
     display: flex;
-    margin-top: 50px;
+
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #main .content .tin_tuc {
@@ -65,21 +70,21 @@
 }
 
 #main .content .tin_tuc img {
-    height: 90%;
+    height: 57%;
+    width: 220px;
 }
 
 #main .content .tin_tuc .noi_dung {
     height: 100%;
     line-height: 100%;
-    padding: 30px 10px;
-    font-size: 20px;
+    font-size: 17px;
     margin: auto 20px;
 }
 
 #main .content .tin_tuc .noi_dung a {
     display: inline-block;
     text-decoration: none;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 #main .content .tin_tuc .noi_dung p {
