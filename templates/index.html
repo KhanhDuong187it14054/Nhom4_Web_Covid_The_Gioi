@@ -7,13 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Covid The Gioi</title>
 
-    <link rel="stylesheet" href="../static/style_index.css">
+    <link rel="stylesheet" href="../static/css/style_index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-    <script src="../static/chart.js"></script>
+    <script src="../static/controller/chart.js"></script>
 </head>
 <body>
     <!-- Begin menu  -->   
@@ -77,7 +77,7 @@
 
          <!-- Info Table -->
         <div class="info_table">
-            <table>
+            <table id="info_data" >
                 <tr>
                   <th>
                       <i class="fa fa-globe" aria-hidden="true"></i>
@@ -86,66 +86,6 @@
                   <th>Ca Nhiễm</th>
                   <th>Tử Vong</th>
                   <th>Phục Hồi</th>
-                </tr>
-                <tr>
-                    <td>Toàn thế giới</td>
-                    <td>10000</td>
-                    <td>10000</td>
-                    <td>10000</td>
-                  </tr>
-                <tr>
-                  <td>Việt Nam</td>
-                  <td>10000</td>
-                  <td>10000</td>
-                  <td>10000</td>
-                </tr>
-                <tr>
-                    <td>Trung Quốc</td>
-                    <td>10000</td>
-                    <td>10000</td>
-                    <td>10000</td>
-                </tr>
-                <tr>
-                    <td>Mỹ</td>
-                    <td>10000</td>
-                    <td>10000</td>
-                    <td>10000</td>
-                </tr>
-                <tr>
-                    <td>Canada</td>
-                    <td>10000</td>
-                    <td>10000</td>
-                    <td>10000</td>
-                </tr>
-                <tr>
-                    <td>France</td>
-                    <td>10000</td>
-                    <td>10000</td>
-                    <td>10000</td>
-                </tr>
-                <tr>
-                    <td>Spain</td>
-                    <td>10000</td>
-                    <td>10000</td>
-                    <td>10000</td>
-                </tr>
-                <tr>
-                    <td>Australia</td>
-                    <td>10000</td>
-                    <td>10000</td>
-                    <td>10000</td>
-                </tr>
-                <tr>
-                    <td>Russia</td>
-                    <td>10000</td>
-                    <td>10000</td>
-                    <td>10000</td>
-                </tr>
-                <tr>
-                    <td>Singapore</td>
-                    <td>10000</td>
-                    <td>10000</td>
-                    <td>10000</td>
                 </tr>
               </table>
               <span>Thông tin về dữ liệu này * Nguồn:
@@ -189,6 +129,10 @@
             <img src="../static/images/hinhfooter2.png" alt="">
         </div>
     </div>
+
+    <script src="../static/controller/get_data.js">
+    </script> 
+
 </body>
 
 </html>
