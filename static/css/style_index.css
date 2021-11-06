@@ -190,18 +190,22 @@ body {
 
 #content .info_table table {
     border-collapse: collapse;
-    border-bottom: 1px solid black;
     width: 100%;
 }
 
 #content .info_table th {
-    background-color: rgba(243, 240, 240, 0.652)
+    background-color: rgba(218, 216, 216, 0.652);
+    height: 45px;
+    border-bottom: 10px solid rgb(255, 255, 255);
 }
 
-#content .info_table th,
 #content .info_table td {
     height: 45px;
     border-bottom: 1px solid black;
+}
+
+#content .info_table td {
+    padding-bottom: 30px;
 }
 
 #content .info_table span {
