@@ -12,8 +12,11 @@
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+    <link rel="shortcut icon" type="image/png" href="../static/images/favicon.ico"/>
+
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script src="../static/controller/chart.js"></script>
+    <script src="../static/controller/get_data.js"></script> 
 </head>
 <body>
     <!-- Begin menu  -->   
@@ -40,9 +43,14 @@
                         
                     </div>
                     <div class = header_list>
-                            <input type="text" placeholder="Nhập tên quốc gia...">
+                        <form action="http://127.0.0.1:5050/country" method="post"> 
+                            <input type="text" name="country" placeholder="Nhập tên quốc gia..." required >
+                            <input type="submit" value="submit" style="display:none" id="submit-form">
+                        </form>                           
                     <div class = header_list-icon>
-                            <i class="fas fa-search"></i>
+                        <label for="submit-form">
+                            <i class="fas fa-search" ></i>
+                        </label>                       
                     </div>    
                     </div>
                 </div>
@@ -57,19 +65,19 @@
                 <table>
                     <tr>
                         <td><strong>Country</strong></td>
-                        <td>VietNam</td>
+                        <td id="country">{{ country }}</td>
                     </tr>
                     <tr>
                         <td><strong>Confirmed</strong></td>
-                        <td>905477</td>
+                        <td id="confirmed"></td>
                     </tr>
                     <tr>
                         <td><strong>Deaths</strong></td>
-                        <td>21910</td>
+                        <td id="deaths"></td>
                     </tr>
                         <tr>
                         <td><strong>Recovered</strong></td>
-                        <td>813963</td>
+                        <td id="recovered"></td>
                     </tr>
                 </table>
             </div> 
@@ -78,22 +86,22 @@
          <!-- Info Table -->
         <div class="info_table">
             <table id="info_data" >
-                <tr>
+                <tr id="title">
                   <th>
-                      <i class="fa fa-globe" aria-hidden="true"></i>
-                      Quốc Gia
+                        <i class="fa fa-globe" aria-hidden="true"></i>
+                        Quốc Gia
                   </th>
                   <th>Ca Nhiễm</th>
                   <th>Tử Vong</th>
                   <th>Phục Hồi</th>
                 </tr>
-              </table>
-              <span>Thông tin về dữ liệu này * Nguồn:
-                  <a href="https://www.worldometers.info/">Worldometers</a> </span>
+            </table>     
         </div>
+        <span>Thông tin về dữ liệu này * Nguồn:
+            <a href="https://www.worldometers.info/">Worldometers</a> 
+         </span>
     </div>
-   
-
+    
 
     <!-- End menu  -->
     <div id="footer">
@@ -130,8 +138,7 @@
         </div>
     </div>
 
-    <script src="../static/controller/get_data.js">
-    </script> 
+
 
 </body>
 
