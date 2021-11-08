@@ -37,5 +37,9 @@ def success(country):
     return render_template("index.html", country=country)
 
 
+@app.errorhandler(404)
+def page_not_found(error):
+   return render_template('error.html'), 404
+
 if __name__ == "__main__":
   app.run(port = 5050)
