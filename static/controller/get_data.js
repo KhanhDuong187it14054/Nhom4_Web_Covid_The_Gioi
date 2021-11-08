@@ -40,7 +40,7 @@ fetch('../static/model/data.json')
             }
             if ( x == data.length-1) {
                 alert("Quốc gia này không tồn tại. Bạn vui lòng điền lại \nHãy điền tên Tiếng Anh của quốc gia này. ")
-                window.location="http://127.0.0.1:5050/index.html";
+                window.location="/index.html";
             }
         }
        
