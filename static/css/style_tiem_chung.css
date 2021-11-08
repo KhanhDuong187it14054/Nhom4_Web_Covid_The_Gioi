@@ -54,7 +54,7 @@
 /* Banner */
 
 #banner {
-    margin: 100px auto;
+    margin: 50px auto;
     width: 85%;
     height: 400px;
     background-image: linear-gradient(to right, #d85b3b, #ffaf17, #f2b036);
@@ -104,14 +104,19 @@
 /* content */
 
 #main {
-    text-align: center;
+    
+    text-align: left;
     margin: 0 auto;
     width: 1000px;
+    /* Dương chỉ đạo, Bình đã sửa */
+    margin-bottom: 50px;
 }
 
-#main .content .tiem_chung img {
+#main .content .tiem_chung a img {
     height: 266px;
     width: 500px;
+    margin-left: 25%;
+    margin-top: 10px;
 }
 
 
