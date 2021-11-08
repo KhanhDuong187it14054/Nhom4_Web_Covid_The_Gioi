@@ -3,7 +3,7 @@ import json
 covid = Covid(source="worldometers")
 
 x = covid.get_data()
-
+print(x)
 list_country_2 = []
 for i in x:
    list_country_2.append(i['country'])
